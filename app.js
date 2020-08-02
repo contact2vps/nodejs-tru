@@ -55,14 +55,14 @@ const header_details = {
 	'metatitle':process.env.metatitle,
 	'heading' : process.env.headertitle,
 	//'public_path':'http://localhost:'+process.env.PORT+'/public',
-	'public_path':'https://nodejs-tru.herokuapp.com:'+process.env.PORT+'/public',
+	'public_path':'https://nodejs-tru.herokuapp.com'+'/public',
 }
 const base_url = site_url();
 
 function site_url(){
 	let site_url ='';
 	//site_url = 'http://localhost:'+process.env.PORT;
-	site_url = 'https://nodejs-tru.herokuapp.com:'+process.env.PORT;
+	site_url = 'https://nodejs-tru.herokuapp.com';
 	return site_url;
 }
 
