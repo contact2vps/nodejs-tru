@@ -1,0 +1,26 @@
+<%- include ('partials/header.ejs'); -%>
+
+<div class="main-agileinfo">
+  <div class="agileits-top">
+    <h1>Please fill up the details</h1>
+    <form id="signupform" action="./user/signup" method="post">
+      <input class="text" type="text" id="username" name="username" placeholder="Username" required="">
+      <input class="text email" type="email" id="email" name="email" placeholder="Email" required="">
+      <input class="text" type="password" id="password" name="password" placeholder="Password" required="">
+      <input class="text w3lpass" type="password" id="repass" name="repass" placeholder="Confirm Password" required="">
+      <div class="wthree-text">
+        <label class="anim">
+          <input type="checkbox" id="terms_conditions" name="terms_conditions" class="checkbox" required="">
+          <span>I Agree To The Terms & Conditions</span>
+        </label>
+        <div class="clear"> </div>
+      </div>
+      <div class="loader" style="display: none;">loading...</div>
+      <input type="submit" value="SIGNUP">
+      <div class="response" style="display:none;"></div>
+    </form>
+    <p>already have an Account? <a href="/signin"> Login Now!</a></p>
+  </div>
+</div>
+
+<%- include ('partials/footer.ejs'); -%>
